@@ -1,0 +1,19 @@
+* {
+    font-family: $base-ff, sans-serif;
+    font-size: $base-fsz;
+    font-weight: $base-fw;
+    color: $base-c25;
+}
+
+body {}
+
+.container {
+    max-width:  $base-w-container;
+    margin: 0 auto;
+}
+
+.button {}
+
+.wrapper {
+    width: 100%;
+}

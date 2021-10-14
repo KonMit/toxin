@@ -1,0 +1,19 @@
+// Экраны
+$base-w-container: 1240px;
+$base-w: 1440px;
+
+// Шрифты
+$base-ff: 'Montserrat';
+$base-fsz: 14px;
+$base-fw: 400;
+
+// Цвета
+$base-c50:rgba(31, 32, 65, .5);
+$base-c25:rgba(31, 32, 65, .25);
+$base-c75:rgba(31, 32, 65, .75);
+$base-c100:rgba(31, 32, 65, 1);
+$secondary-c:rgba(31, 32, 65, 1);
+$primary-c:#8BA4F9;
+$green-c: #6FCF97;
+// Градиент
+$primary-gr:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);

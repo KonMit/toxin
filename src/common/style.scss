@@ -1,0 +1,21 @@
+/*------------ИМПОРТ------------*/
+
+@import 'scss/variable'; //--ПЕРЕМЕННЫЕ
+@import 'scss/fonts'; //-----ШРИФТЫ
+@import 'scss/general'; //---ОСНОВНЫЕ СТИЛЕЙ
+@import 'scss/reset'; //-----ОБНУЛЯЮЩИЕ СТИЛЕЙ
+
+/*------------HEADER------------*/
+
+@import "../blocks/header/header";
+@import '../blocks/nav/nav';
+
+/*------------MAIN--------------*/
+
+@import "../blocks/main/main";
+
+/*------------FOOTER------------*/
+
+@import "../blocks/footer/footer";
+
+/*------------------------------*/

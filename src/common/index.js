@@ -1,0 +1,2 @@
+// ===СТИЛИ===
+import './style.scss';
