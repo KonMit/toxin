@@ -1,0 +1,17 @@
+.input {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex: 1 0 auto;
+  max-width: 320px;
+  line-height: 24px;
+  background: #FFFFFF;
+  border: 1px solid $base-c25;
+  border-radius: 4px;
+  padding: 15px 0px 15px 15px;
+  &::placeholder {
+    color: $base-c25;
+    font-size: inherit;
+    line-height: 18px;
+  }
+}

@@ -73,7 +73,7 @@ let config = {
        // ===SCSS==
       {
         test: /\.s[ac]ss$/,
-        use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
         ]
       }
     ]

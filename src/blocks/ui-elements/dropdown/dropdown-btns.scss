@@ -1,0 +1,21 @@
+.dropdown-btns {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__btn {
+    font-weight: bold;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+  }
+  &_apply {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 0 auto;
+  }
+}

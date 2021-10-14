@@ -6,14 +6,29 @@
 }
 
 body {}
-
-.container {
-    max-width:  $base-w-container;
-    margin: 0 auto;
-}
-
-.button {}
-
 .wrapper {
     width: 100%;
+}
+
+.container {
+  max-width:  $base-w-container;
+  margin: 0 auto;
+}
+
+.btn {}
+
+.title {
+  font-weight: bold;
+  color: $base-c100;
+  &_h1 {
+    font-size: 24px;
+  }
+  &_h2 {
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+  &_h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }
