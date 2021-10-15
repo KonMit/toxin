@@ -59,7 +59,7 @@ let config = {
         test: /\.(png|jp(e)?g|svg)$/,
         type: 'asset/resource',
         generator: {
-          filename: `${PATHS.assets}/img/[name].[ext]`
+          filename: `${PATHS.assets}/img/[name][ext]`
         }
       },
       // ===FONTS===
@@ -67,7 +67,7 @@ let config = {
          test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
          type: 'asset/resource',
          generator: {
-           filename: `[path][name].[ext]`
+           filename: `[path][name][ext]`
          }
        },
        // ===SCSS==

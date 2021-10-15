@@ -1,7 +1,8 @@
-mixin dropdown(count, title, text)
+mixin dropdown(count, title, titleBox, text)
   .dropdown 
+    h3.title.title_h3=title
     .dropdown__box
-      span.dropdown__title=title
+      span.dropdown__title=titleBox
       img.dropdown__image(src='assets/img/icons/arrow.svg' alt='dropdown-arrow')
     .dropdown-modal
       ul.dropdown-modal__items
@@ -18,4 +19,6 @@ mixin dropdown(count, title, text)
       .dropdown-btns.dropdown-modal__btns 
         button.dropdown-btns__btn.dropdown-btns_cancel.title_h3(hidden) Очистить
         button.dropdown-btns__btn.dropdown-btns_apply.title_h3 Применить
+        
+include _date/_date
       

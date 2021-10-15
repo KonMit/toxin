@@ -2,11 +2,11 @@ const dropdown = document.querySelector('.dropdown');
 const dropdownBox = document.querySelectorAll('.dropdown__box');
 const body = document.querySelector('body');
 
-const openDropdown = (dropdown, open) => {
-  if (open === false)
-    dropdown.classList.remove('active');
+const openDropdown = (item, open) => {
+  if (open)
+    item.classList.remove('active');
   else
-    dropdown.classList.toggle('active');
+    item.classList.toggle('active');
 }
 // openDropdown
 const counter = (item, scoreOld, dropdownBtnCancel) => {
@@ -37,20 +37,30 @@ const counter = (item, scoreOld, dropdownBtnCancel) => {
 // counter
 
 
-body.addEventListener('click', (event) => {
-  if (!event.target.closest('.dropdown'))
-    openDropdown(dropdown, false);
-});
+
 dropdown.addEventListener('click', (event) => {
+  body.addEventListener('click', (event) => {
+    if (!event.target.closest('.dropdown')) {
+      openDropdown(dropdownModal, true);
+      openDropdown(dropdownBox, true);
+    }
+
+  });
+
     const dropdownBtnCancel = dropdown.querySelector('.dropdown-btns_cancel'),
           dropdownBtnApply = dropdown.querySelector('.dropdown-btns_apply'),
+          dropdownModal = dropdown.querySelector('.dropdown-modal'),
+          dropdownBox = dropdown.querySelector('.dropdown__box');
           counterScore = dropdown.querySelector('.counter__score');
 
     dropdownBtnApply.addEventListener('click', () => {
-      dropdown.classList.remove('active');
+      dropdownModal.classList.remove('active');
     })
-    if (event.target.closest('.dropdown__box'))
-      openDropdown(dropdown);
+    if (event.target.closest('.dropdown__box')){
+      openDropdown(dropdownModal);
+      openDropdown(dropdownBox);
+    }
+
 
     if(event.target.closest('.counter__image')) {
       let scoreOld = parseInt(counterScore.textContent);

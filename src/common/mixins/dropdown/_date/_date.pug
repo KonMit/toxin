@@ -1,0 +1,8 @@
+mixin dropdown_date(count, title, titleBox)
+  .dropdown.dropdown_date
+    -for(i = 0; i < count; i++)
+      .dropdown__item
+        h3.title.title_h3=title[i]
+        .dropdown__box
+          span.dropdown__title=titleBox[i]
+          img.dropdown__image(src='assets/img/icons/arrow.svg' alt='dropdown-arrow')

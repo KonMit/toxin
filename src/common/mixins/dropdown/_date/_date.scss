@@ -1,0 +1,14 @@
+.dropdown_date {
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 20px;
+  .dropdown__item {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1 0 auto;
+    max-width: 150px;
+  }
+}

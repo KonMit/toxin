@@ -3,6 +3,9 @@
   display: -ms-flex;
   display: flex;
   flex-direction: column;
+  row-gap: 5px;
+  max-width: 320px;
+  position: relative;
   &__box {
     display: -webkit-flex;
     display: -ms-flex;
@@ -10,8 +13,21 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    border: 1px solid $base-c25;
+    border-radius: 4px;
+    padding: 15px 15px 15px 15px;
+    user-select: none;
+    &.active {
+      border: 1px solid $base-c75;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  &__title {
+    color: $base-c75;
   }
 }
 
 @import 'dropdown-btns';
 @import 'dropdown-modal';
+@import '_date/_date';
