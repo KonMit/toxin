@@ -1,0 +1,44 @@
+.like-button {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  border: 1px solid $base-c25;
+  border-radius: 10px;
+  max-width: 40px;
+  padding: 3px 5px 3px 5px;
+  user-select: none;
+  &.like-active {
+    border: 1px solid $primary-c;
+  }
+  &__heart {
+    width: 16px;
+    height: 16px;
+    background: url('mixins/like-button/like-button-disabled.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 12px 12px;
+    transition: .2s;
+  }
+  &.like-active &__heart {
+    width: 16px;
+    height: 16px;
+    background: url('mixins/like-button/like-button.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 12px 12px;
+    transition: .2s;
+  }
+  &__number {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    transition: .2s;
+    font-size: 12px;
+  }
+  &.like-active &__number {
+    color: $primary-c;
+  }
+}

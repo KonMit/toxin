@@ -6,6 +6,7 @@
   row-gap: 5px;
   max-width: 320px;
   position: relative;
+  user-select: none;
   &__box {
     display: -webkit-flex;
     display: -ms-flex;

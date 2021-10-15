@@ -1,0 +1,8 @@
+mixin rate-button(countD)
+  .rate-button
+    - var count = 5 - countD;
+    - for (i = 0; i < countD; i++)
+      button.rate-button__star(type='button')
+    - for (i = 0; i < count; i++)
+      button.rate-button__star.rate-disabled(type='button')  
+      
