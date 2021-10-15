@@ -1,0 +1,7 @@
+mixin text-field(title, type, placeholderInputText)
+  .text-field
+    if(title != '')
+      h3.title.title_h3=title 
+    input.text-field__input(type='text' placeholder=placeholderInputText)
+
+include _subscription/_subscription

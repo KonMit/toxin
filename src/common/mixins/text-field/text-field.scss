@@ -1,0 +1,27 @@
+.text-field {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  row-gap: 5px;
+  max-width: 320px;
+  background: #fff;
+  &__input {
+    border: 1px solid $base-c25;
+    border-radius: 4px;
+    padding: 15px 0px 15px 15px;
+    &:focus,
+    &:hover {
+      border: 1px solid $base-c75;
+      color: $base-c75;
+    }
+    &::placeholder {
+      color: $base-c25;
+      font-size: inherit;
+      line-height: 18px;
+    }
+  }
+}
+
+@import '_subscription/subscription';

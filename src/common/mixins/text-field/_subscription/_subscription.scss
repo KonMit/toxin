@@ -1,0 +1,22 @@
+.text-field_subscription {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  border: 1px solid $base-c25;
+  border-radius: 4px;
+  padding: 15px 15px 15px 15px;
+  .text-field__input_subscription {
+    border: none;
+    padding: 0;
+    background: none;
+  }
+  &:focus-within, 
+  &:hover {
+    border: 1px solid $base-c75;
+    color: $base-c75;
+  }
+}

@@ -1,0 +1,8 @@
+mixin text-field_subscription(title, type, placeholderInputText)
+  .text-field
+    if (title != '')
+      h3.title.title_h3= title
+    form.text-field_subscription(action='')
+      input.text-field__input.text-field__input_subscription(type=type placeholder=placeholderInputText)
+      button.text-field__btn(type='submit')
+        img.text-field__image(src='assets/img/icons/send.svg' alt='send')
