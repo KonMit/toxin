@@ -1,0 +1,49 @@
+.toggle-button {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  &__input {
+    appearance: none;
+  }
+  &__psevdo::before {
+    content: '';
+    position: absolute;
+    z-index: -5;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    // background: $base-c25;
+    background: linear-gradient(180deg, $base-c25 0%, $base-c25 100%);
+    border-radius: 10px;
+    transition: all .3s;
+  }
+  &__psevdo {
+    display: inline-block;
+    position: relative;
+    z-index: 15;
+    width: 40px;
+    height: 20px;
+    border: 1px solid $base-c25;
+    border-radius: 10px;
+    background: none;
+  }
+  &__input:checked + &__psevdo::before {
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
+  &__input:checked + &__psevdo {
+    border-color: $primary-c;
+
+  }
+}

@@ -67,7 +67,7 @@ let config = {
          test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
          type: 'asset/resource',
          generator: {
-           filename: `[path][name][ext]`
+           filename: `${PATHS.assets}/fonts/[name][ext]`
          }
        },
        // ===SCSS==
